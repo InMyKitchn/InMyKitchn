@@ -1,0 +1,105 @@
+/*
+ * modal.css
+ *
+ * Styling for modals on all pages
+ *
+ * MUST be referenced on any HTML page with a navigation bar
+ * Should be referenced on ALL HTML pages for consistency
+ */
+
+/*
+ * :Root
+ *
+ * Theme Colours
+ * --name: value;
+ */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #333;
+  --lightgray: #E1DCD7;
+  --maroon: #320404;
+  --tan: #FFEFD9;
+}
+
+/* 
+ * The Modal (background) 
+ */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: var(--black); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* 
+ * Modal Content/Box 
+ */
+.modalContent {
+  background-color: var(--white);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid var(--lightgray);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/*
+ * Close (X) buttons
+ */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: var(--gray);
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* 
+ * Close (word) buttons 
+ */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: var(--maroon);
+}
+
+.cancelbtn:hover {
+  color: var(--maroon);
+}
+
+/*
+ * *****************
+ * ANIMATION CLASSES
+ * *****************
+ */
+
+/* 
+ * Zoom animation for modals (login, details, etc.)
+ */
+.animateZoom {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}

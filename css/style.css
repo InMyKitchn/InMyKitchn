@@ -1,0 +1,225 @@
+/*
+ * style.css
+ *
+ * General styling applicable to ALL pages
+ *
+ * MUST reference on ALL HTML pages for consistency
+ */
+
+/*
+ * :Root
+ *
+ * Theme Colours
+ * --name: value;
+ */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #333;
+  --lightgray: #E1DCD7;
+  --maroon: #320404;
+  --tan: #FFEFD9;
+}
+
+
+
+/*
+ * 
+ * Defaults
+ * 
+ */
+* {
+  color: var(--black);
+  font-family: spartan;
+  font-weight: bold;
+}
+
+
+
+/* 
+ * 
+ * Default body
+ * 
+ */
+body {
+  padding: 0px; /* keep as 0 */
+  margin: 0px; /* keep as 0 */
+  height: 100%;
+}
+
+.pageContent {
+  margin: 20px; /* change for page content format */
+}
+
+
+
+/* 
+ * 
+ * Default buttons 
+ * 
+ */
+button {
+  color: var(--tan);
+  background-color: var(--gray);
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--gray);
+  background-color: var(--tan);
+  outline: 2px solid var(--gray);
+}
+
+/* Default button icons */
+button i {
+  color: var(--tan);
+  background-color: var(--gray);
+}
+
+button:hover i {
+  color: var(--gray);
+  background-color: var(--tan);
+}
+
+
+
+/*
+ * 
+ * Default input boxes
+ * 
+ */
+
+/* Default text input */
+input[type=text]:focus {
+  outline: 2px solid var(--gray);
+}
+
+
+
+/*
+ * 
+ * Default text 
+ * 
+ */
+
+/* Default h1 */
+h1 {
+  color: var(--maroon);
+  text-align: center;
+}
+
+
+
+/* 
+ * 
+ * Default table 
+ * 
+ */
+table, th, td {
+  border: 1px solid var(--black);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* Colour even rows */
+tr:nth-child(even) {
+  background-color: var(--lightgray);
+}
+
+
+
+
+
+
+
+/*
+ * ***************
+ * UTILITY CLASSES
+ * ***************
+ */
+
+/*
+ * Transparent background class
+ */
+.transparentBKGD {
+  background-color: transparent;
+}
+
+/*
+ * noCursor class
+ */
+.noCursor:hover {
+  cursor: default;
+}
+
+/*
+ * hoverCursor class
+ */
+.hoverCursor:hover {
+  cursor: pointer;
+}
+
+/*
+ * Show element class
+ */
+.show {
+  display: grid;
+}
+
+/*
+ * doNotShow element class
+ */
+.doNotShow {
+  display: none;
+}
+
+/*
+ * spaceH element class
+ */
+.spaceH {
+  height: 5vw;
+  background-color: transparent;
+}
+
+/*
+ * noBorder element class
+ */
+ .noBorder {
+   border: none;
+ }
+
+/*
+ * center element class
+ */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ * container element class
+ */
+.container {
+  padding: 24px;
+  padding-top: 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+/*
+ * result.css
+ *
+ * Styling for the results page from the API
+ */
+ 
+/*
+ * :Root
+ *
+ * Theme Colours
+ * --name: value;
+ */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #333;
+  --lightgray: #E1DCD7;
+  --maroon: #320404;
+  --tan: #FFEFD9;
+}
+
+/*
+ * Styling for the next and previous page buttons
+ */
+.pageNavButtons {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pageNavButtons a, .pageNavButtons p {
+  font-size: 52px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 32px;
+}
+
+.pageNavButtons a:hover, .pageNavButtons p:hover {
+  background-color: var(--gray);
+  color: var(--tan);
+}
+
+.previous {
+  background-color: var(--lightgray);
+  color: var(--black);
+}
+
+.next {
+  background-color: var(--tan);
+  color: var(--gray);
+}
+
+.tableData {
+  text-align: left; 
+  height:26px; 
+  padding:0.5em 1.5em;
+  border: none;
+}
+
+a:hover {
+  color: #a50a0a;
+}
+
+.tableAPI thead, .tableAPI tbody, .tableAPI tr, .tableAPI td, .tableAPI th { display: block; }
+
+.tableAPI tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}

@@ -1,0 +1,95 @@
+/*
+ * mainPage.css
+ *
+ * Styling for specific elements on the main page
+ */
+
+/*
+ * :Root
+ *
+ * Theme Colours
+ * --name: value;
+ */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #333;
+  --lightgray: #E1DCD7;
+  --maroon: #320404;
+  --tan: #FFEFD9;
+}
+
+/*
+ * Parallax
+ *
+ * Image for parallax scrolling effect
+ *
+ */
+#titleContainer {
+  position: relative;
+  text-align: left;
+  color: var(--black);  
+  background-image: url("../images/kitchenCounter.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Set a specific height */
+  height: 50vw;
+  object-fit: cover;
+  width: 100%;
+}
+
+#titleText {
+  padding-left: 100px;
+  z-index: 2;  
+  font-size: 10vw;
+  color: var(--black);
+  mix-blend-mode: normal;
+} 
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 600px) {
+  #titleContainer {
+    background-attachment: scroll;
+  }
+}
+
+/*
+ * Styling for welcome text and buttons
+ */
+.about {
+  text-align: center;
+  width: 400px;
+}
+
+.getStarted {
+  background-color: var(--lightgray);
+  height: 200px;
+  display: block;
+  max-width: 100%;
+  margin-top:1px;
+  width:100%;
+  text-align: center;
+}
+
+.getStartedContent {
+  transform: translateY(50%); /*makes it messed up on mobile*/
+}
+
+#startbtn {
+  width: 150px;
+}
+
+/*
+ * Styling for the table for filters if user is logged in
+ */
+.selectFilters {
+  text-align: left;
+  vertical-align: top;
+  padding: 24px;
+  padding-top: 8px;
+  max-width:100px;
+  background-color: var(--tan);
+}
+
